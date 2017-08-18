@@ -21,7 +21,7 @@ class LogStash::Inputs::Cber < LogStash::Inputs::Base
   default :codec, "plain"
 
   config :rabbitmquser , :validate => :string, :default => "cb"
-  config :rabbitmqpassword , :validate => :string, :default => "PASSWORD"
+  config :rabbitmqpassword , :validate => :string, :default => "cIuR3TmiBhpBtvvd"
   config :rabbitmqport , :validate => :number , :default => 5004
   config :rabbitmqhost , :validate => :string , :default => "localhost"
 
