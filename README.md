@@ -15,4 +15,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 
 #BUILD
+#ZE - This should be considered an beta side project/weekend hack rather 
+#than a production ready integration
+#YMMV and but please feel free to contribute to the plugin's imporovement! 
 Use `./build_and_install_logstash_plugin.sh`
