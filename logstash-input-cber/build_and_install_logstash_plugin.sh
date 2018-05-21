@@ -15,4 +15,5 @@ cp gson-2.8.1.jar lib/logstash/inputs
 (javac -classpath lib/logstash/inputs/protobuf-java-3.3.1.jar lib/logstash/inputs/com/carbonblack/SensorEvents/SensorEventsProtos.java -d lib/logstash/inputs/target)
 (cd lib/logstash/inputs/target ; jar -cvfe SensorEvents.jar -C .)
 jruby -S gem build logstash-input-cber.gemspec
+jruby -S bundle update 
 logstash-plugin install --no-verify logstash-input-cber-0.1.0.gem

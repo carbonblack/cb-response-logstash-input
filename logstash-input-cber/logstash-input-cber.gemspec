@@ -21,7 +21,7 @@ Gem::Specification.new do |s|
   #s.add_development_dependency 'jar-dependencies', '~> 0.3.2'
   s.add_runtime_dependency "logstash-core-plugin-api", "~> 2.0"
   s.add_runtime_dependency 'logstash-codec-plain'
-  s.add_runtime_dependency 'march_hare'
+  s.add_runtime_dependency 'march_hare' , "= 3.1.0"
   s.add_runtime_dependency 'json'
   s.add_development_dependency 'logstash-devutils', '>= 0.0.16'
 end

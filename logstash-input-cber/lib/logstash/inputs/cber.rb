@@ -44,7 +44,8 @@ class LogStash::Inputs::Cber < LogStash::Inputs::Base
         puts 'trying to queue_bind api.events w/ rk : %s' % [rk]
         @queue.bind("api.events",:routing_key => rk)
     end
-    @queue.bind("api.rawsensordata",:options=>{:routing_key => ""})
+    puts 'trying to queue_bind api.rawsensordata'
+    @queue.bind("api.rawsensordata",:routing_key => "")
     puts "done registering"
 
   end # def register
